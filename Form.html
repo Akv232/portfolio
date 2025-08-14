@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Forms in Html</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Registration Hackathon</h3><br>
+    <form ><fieldset><legent>Personal details</legent><br><br>
+      <label><strong>Name</strong></label> <input type="text"><br><br>
+<label><strong> Gender</strong></label>
+    <input type="radio" id="male" name="gender" value="Male">
+    <label>Male</label>
+
+    <input type="radio" id="female" name="gender" value="Female">
+    <label>Female</label>
+
+    <input type="radio" id="other" name="gender" value="Other">
+    <label>Other</label><br><br>
+
+     <label>Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob" required><br><br>
+
+    <label>Email ID:</label><br>
+    <input type="email" id="email" name="email" required><br><br></fieldset>
+
+    <label>College Name:</label><br>
+    <input type="text" id="college" name="college"><br><br>
+
+    <label >College Address:</label><br>
+    <textarea id="address" name="address" rows="3" cols="40" required></textarea><br><br>
+
+
+    <label>Semester:</label><br>
+    <select id="semester" name="semester" required>
+      <option value="">--Select--</option>
+      <option value="sem1">Sem 1</option>
+      <option value="sem2">Sem 2</option>
+      <option value="sem3">Sem 3</option>
+      <option value="sem4">Sem 4</option>
+    </select><br><br>
+
+    <label for="profilePic">Upload Profile Picture:</label><br>
+    <input type="file" id="profilePic" name="profilePic" accept="image/*"><br><br>
+    <input type="checkbox" id="terms" name="terms" required>
+    <label for="terms">I accept the terms and conditions</label><br><br>
+    <input type="submit" value="Register">
+
+    </form>
+
+    </body>
+    </html>

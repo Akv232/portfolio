@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Home from './pages/Home'
 import About from './pages/About'
-import Contact from './pages/contact'
+// import Contact from './pages/contact'
 import Education from './pages/education'
 import Project from './pages/project'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
@@ -41,14 +41,14 @@ function App() {
                   Education
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   to="/contact"
                   className="px-3 py-2 rounded-md hover:bg-gray-700 transition"
                 >
                   Contact
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link
                   to="/project"
@@ -66,7 +66,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/education" element={<Education />} />
-          <Route path="/contact" element={<Contact />} />
+          {/* <Route path="/contact" element={<Contact />} /> */}
           <Route path="/project" element={<Project />} />
         </Routes>
       </BrowserRouter>
